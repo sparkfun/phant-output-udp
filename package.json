@@ -1,6 +1,6 @@
 {
   "name": "phant-output-repeater",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/phant-output-repeater.js",
   "description": "http output module for phant",
   "homepage": "https://github.com/sparkfun/phant-output-repeater",
