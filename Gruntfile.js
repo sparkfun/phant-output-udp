@@ -8,6 +8,9 @@ module.exports = function (grunt) {
 
   // Project configuration.
   grunt.initConfig({
+    nodeunit: {
+      files: ['test/**/*_test.js']
+    },
     jshint: {
       options: {
         jshintrc: '.jshintrc',
@@ -33,6 +36,6 @@ module.exports = function (grunt) {
   });
 
   // Default task.
-  grunt.registerTask('default', ['jshint']);
+  grunt.registerTask('default', ['jshint', 'nodeunit']);
 
 };

@@ -1,8 +1,8 @@
 {
   "name": "phant-output-repeater",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "lib/phant-output-repeater.js",
-  "description": "http output module for phant",
+  "description": "udp output repeater for phant",
   "homepage": "https://github.com/sparkfun/phant-output-repeater",
   "bugs": "https://github.com/sparkfun/phant-output-repeater/issues",
   "author": {
@@ -35,6 +35,7 @@
     "grunt-contrib-watch": "^0.6.0",
     "time-grunt": "^0.2.10",
     "load-grunt-tasks": "^0.4.0",
-    "jshint-stylish": "^0.1.5"
+    "jshint-stylish": "^0.1.5",
+    "grunt-contrib-nodeunit": "^0.3.3"
   }
 }
