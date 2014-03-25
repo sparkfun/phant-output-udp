@@ -1,6 +1,6 @@
 {
   "name": "phant-output-repeater",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "lib/phant-output-repeater.js",
   "description": "udp output repeater for phant",
   "homepage": "https://github.com/sparkfun/phant-output-repeater",
