@@ -1,0 +1,40 @@
+{
+  "name": "phant-output-repeater",
+  "version": "0.0.1",
+  "main": "lib/phant-output-repeater.js",
+  "description": "http output module for phant",
+  "homepage": "https://github.com/sparkfun/phant-output-repeater",
+  "bugs": "https://github.com/sparkfun/phant-output-repeater/issues",
+  "author": {
+    "name": "Todd Treece",
+    "email": "todd@uniontownlabs.org",
+    "url": "http://uniontownlabs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sparkfun/phant-output-repeater"
+  },
+  "licenses": [
+    {
+      "type": "GPL v3"
+    }
+  ],
+  "keywords": [
+    "data"
+  ],
+  "dependencies": {
+    "underscore": "^1.6.0"
+  },
+  "engines": {
+    "node": "^0.10.26"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-contrib-watch": "^0.6.0",
+    "time-grunt": "^0.2.10",
+    "load-grunt-tasks": "^0.4.0",
+    "jshint-stylish": "^0.1.5"
+  }
+}
