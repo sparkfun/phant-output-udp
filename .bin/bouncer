@@ -2,7 +2,7 @@
 
 var udp = require('dgram').createSocket('udp4'),
     net = require('net'),
-    port = process.env.PHANT_REPEATER_PORT || 5000,
+    port = process.env.PHANT_REPEATER_PORT || 8002,
     clients = [];
 
 net.createServer(function(stream) {
@@ -20,7 +20,7 @@ net.createServer(function(stream) {
     clients.splice(index, 1);
   });
 
-}).listen(process.env.PHANT_REPEATER_PORT || 5000, process.env.PHANT_REPEATER_HOST || 'localhost');
+}).listen(port, process.env.PHANT_REPEATER_HOST || 'localhost');
 
 udp.on('message', function(message) {
 
@@ -30,6 +30,6 @@ udp.on('message', function(message) {
 
 });
 
-udp.bind(process.env.PHANT_REPEATER_PORT || 5000);
+udp.bind(port);
 
 console.log('RELAYING TO TCP PORT ' + port);
