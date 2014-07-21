@@ -16,10 +16,11 @@
   },
   "license": "GPL-3.0",
   "keywords": [
-    "data"
+    "data",
+    "phant"
   ],
   "engines": {
-    "node": "^0.10.28"
+    "node": "^0.10.29"
   },
   "scripts": {
     "test": ".bin/bouncer"
@@ -34,5 +35,32 @@
     "jshint-stylish": "^0.1.5",
     "grunt-contrib-nodeunit": "^0.3.3",
     "grunt-jsbeautifier": "^0.2.7"
+  },
+  "phantConfig": {
+    "name": "UDP Repeater",
+    "options": [
+      {
+        "label": "Host",
+        "name": "host",
+        "default": "localhost",
+        "type": "text",
+        "description": "IP or hostname of UDP server."
+      },
+      {
+        "label": "Port",
+        "name": "port",
+        "default": "8002",
+        "type": "number",
+        "description": "The port the UDP server is listening on."
+      },
+      {
+        "label": "Keychain",
+        "name": "keychain",
+        "default": "phant-keychain-hex",
+        "type": "select",
+        "require": "keychain",
+        "description": "The phant keychain module to use"
+      }
+    ]
   }
 }
