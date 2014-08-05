@@ -1,6 +1,6 @@
 {
   "name": "phant-output-udp",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": "lib/phant-output-udp.js",
   "description": "udp output for phant",
   "homepage": "https://github.com/sparkfun/phant-output-udp",
