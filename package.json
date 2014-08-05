@@ -1,10 +1,10 @@
 {
-  "name": "phant-output-repeater",
+  "name": "phant-output-udp",
   "version": "1.3.0",
-  "main": "lib/phant-output-repeater.js",
-  "description": "udp output repeater for phant",
-  "homepage": "https://github.com/sparkfun/phant-output-repeater",
-  "bugs": "https://github.com/sparkfun/phant-output-repeater/issues",
+  "main": "lib/phant-output-udp.js",
+  "description": "udp output for phant",
+  "homepage": "https://github.com/sparkfun/phant-output-udp",
+  "bugs": "https://github.com/sparkfun/phant-output-udp/issues",
   "author": {
     "name": "Todd Treece",
     "email": "todd@uniontownlabs.org",
@@ -12,18 +12,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/sparkfun/phant-output-repeater"
+    "url": "git://github.com/sparkfun/phant-output-udp"
   },
   "license": "GPL-3.0",
   "keywords": [
     "data",
-    "phant"
+    "phant",
+    "IoT",
+    "UDP"
   ],
   "engines": {
-    "node": "^0.10.29"
-  },
-  "scripts": {
-    "test": ".bin/bouncer"
+    "node": "^0.10.30"
   },
   "devDependencies": {
     "grunt": "^0.4.4",
@@ -33,11 +32,10 @@
     "time-grunt": "^0.2.10",
     "load-grunt-tasks": "^0.4.0",
     "jshint-stylish": "^0.1.5",
-    "grunt-contrib-nodeunit": "^0.3.3",
     "grunt-jsbeautifier": "^0.2.7"
   },
   "phantConfig": {
-    "name": "UDP Repeater",
+    "name": "UDP",
     "options": [
       {
         "label": "Host",
